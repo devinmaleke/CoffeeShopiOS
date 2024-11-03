@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingVC" customModule="CoffeeShop" customModuleProvider="target">
+            <connections>
+                <outlet property="bgContentView" destination="3Fi-CH-W22" id="cmJ-fN-xUK"/>
+                <outlet property="imageHeight" destination="9UO-cy-QPF" id="1KF-9T-4oU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingImage" translatesAutoresizingMaskIntoConstraints="NO" id="2oh-Cl-VYZ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="500" id="9UO-cy-QPF"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-CH-W22">
+                    <rect key="frame" x="0.0" y="480" width="393" height="372"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-ga-tLr">
+                    <rect key="frame" x="16" y="746" width="361" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="aDT-Hj-MmI"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Get Started">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.77647058823529413" green="0.48627450980392156" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="psN-ut-D8q"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Welcome to our cozy coffee corner, where every cup is a delightful for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-Rq-5s4">
+                    <rect key="frame" x="16" y="673.33333333333337" width="361" height="40.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fall in Love with Coffee in Blissful Delight!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djL-4L-Fur">
+                    <rect key="frame" x="16" y="495.99999999999994" width="361" height="161.33333333333331"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="djL-4L-Fur" firstAttribute="top" secondItem="3Fi-CH-W22" secondAttribute="top" constant="16" id="Fok-fu-0bl"/>
+                <constraint firstItem="QKg-ga-tLr" firstAttribute="top" secondItem="0ew-Rq-5s4" secondAttribute="bottom" constant="32" id="GVS-bf-ym0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Fi-CH-W22" secondAttribute="trailing" id="GiD-y6-g16"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0ew-Rq-5s4" secondAttribute="trailing" constant="16" id="Kaf-e9-XNg"/>
+                <constraint firstItem="0ew-Rq-5s4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Rp2-0G-ZRe"/>
+                <constraint firstItem="0ew-Rq-5s4" firstAttribute="top" secondItem="djL-4L-Fur" secondAttribute="bottom" constant="16" id="SYV-RB-0o1"/>
+                <constraint firstItem="QKg-ga-tLr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VGJ-eT-VL9"/>
+                <constraint firstItem="2oh-Cl-VYZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YL3-wQ-2Hc"/>
+                <constraint firstItem="3Fi-CH-W22" firstAttribute="top" secondItem="2oh-Cl-VYZ" secondAttribute="bottom" constant="-20" id="bi4-lS-u8l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2oh-Cl-VYZ" secondAttribute="trailing" id="eq7-OU-Eng"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QKg-ga-tLr" secondAttribute="bottom" constant="16" id="hlZ-7X-HCc"/>
+                <constraint firstItem="djL-4L-Fur" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="o31-j9-fBZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="djL-4L-Fur" secondAttribute="trailing" constant="16" id="udV-55-KGE"/>
+                <constraint firstItem="2oh-Cl-VYZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wcU-Ah-Zx5"/>
+                <constraint firstAttribute="bottom" secondItem="3Fi-CH-W22" secondAttribute="bottom" id="xpB-t3-jDi"/>
+                <constraint firstItem="3Fi-CH-W22" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y10-4b-w7c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QKg-ga-tLr" secondAttribute="trailing" constant="16" id="yy3-RD-jvK"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OnBoardingImage" width="1500" height="2144"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
